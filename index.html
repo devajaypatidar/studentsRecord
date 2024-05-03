@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studen't API</title>
+</head>
+<body>
+
+    <h1>Student's Details </h1>
+    <h2>Pagination Form</h2>
+    <form id="paginationForm" action="/api/students" method="GET">
+      <label for="pageSize">Page Size:</label>
+      <input type="number" id="pageSize" name="pageSize" value="10">
+      <br><br>
+      <label for="pageNumber">Page Number:</label>
+      <input type="number" id="pageNumber" name="page" value="1">
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Student Filtering</h2>
+    <form id="filterForm" action="/api/students/filter" method="GET">
+      <label for="criteria">Filter Criteria:</label>
+      <input type="text" id="criteria" name="criteria" placeholder="Enter filter criteria (state=LA)">
+      <button type="submit">Apply Filter</button>
+    </form>
+    <div id="filteredStudents"></div>
+  
+    <script>
+      
+    </script>
+</body>
+</html>

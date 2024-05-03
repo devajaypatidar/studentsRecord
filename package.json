@@ -1,0 +1,15 @@
+{
+  "name": "student-api",
+  "version": "1.0.0",
+  "description": "Api to load student info with pagination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay Patidar",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "express": "^4.19.2"
+  }
+}
